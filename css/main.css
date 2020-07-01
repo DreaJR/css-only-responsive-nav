@@ -1,0 +1,75 @@
+
+body {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  background: lightgray;
+}
+
+* {
+   transition: all 0.3s;
+}
+
+/* ************ Nav bar styles *********** */
+.top-nav {
+  overflow: hidden;
+  background-color: #8e24aa;
+  /* so it goes overtop of the elements */
+  z-index:2;
+}
+
+.top-nav a, label{
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 12px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+ a:hover {
+  background-color: #9c27b0;
+
+}
+
+/* hide menu on desktop */
+.top-nav .icon {
+  display: none;
+}
+
+.nav-icon {
+  margin: 1em;
+  width: 40px;
+
+}
+
+input[type=checkbox] {
+display:none;
+}
+
+/* ************ Nav bar styles *********** */
+
+
+/* ************ Responsive Styles *********** */
+@media screen and (max-width: 600px) {
+
+  .top-nav a{display: none;}
+
+  .top-nav label.icon {
+    float: right;
+    display: block;
+    color: white;
+  }
+
+  .top-nav{position: relative;}
+
+  #toggle:checked + .nav-links a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+
+}
+
+/* ************ Responsive Styles *********** */
